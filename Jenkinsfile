@@ -6,7 +6,7 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-                git branch: 'main', url: 'https://github.com/rajeshgangoni/Multibranch_Restassured.git'
+                git branch: 'main', url: 'https://github.com/rajeshgangoni/Maven_Project_RestAssured.git'
             }
          }        
        stage('Build'){
