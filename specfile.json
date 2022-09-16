@@ -10,7 +10,7 @@
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"entityIds": "SERVICE-65778F58A66834D8",
+			"entityIds": "ip-172-31-16-34.us-east-2.compute.internal",
 			"upperWarning": 5000,
 			"upperSevere": 8000
 		},
