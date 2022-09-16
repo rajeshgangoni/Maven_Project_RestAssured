@@ -1,22 +1,23 @@
 {
 	"spec_version": "2.0",
 	"timeseries": [{
-			"timeseriesId": "com.dynatrace.builting:host.cpu.idle",
+			"timeseriesId": "com.dynatrace.builtin:host.cpu.idle",
 			"aggregation": "avg",
-			"tags": "Frontend",
+		        "entityIds": "HOST-060E32CBBA091CBF",
 			"upperWarning": 5000,
 			"upperSevere": 10000
 		},
 		{
-			"timeseriesId": "com.dynatrace.builting:host.cpu.gcpu.usage",
+			"timeseriesId": "com.dynatrace.builtin:host.cpu.gcpu.usage",
 			"aggregation": "avg",
-			"entityIds": "ip-172-31-16-34.us-east-2.compute.internal",
+			"entityIds": "HOST-060E32CBBA091CBF",
 			"upperWarning": 5000,
 			"upperSevere": 8000
 		},
 		{
-			"timeseriesId": "com.dynatrace.builting:host.cpu.load",
+			"timeseriesId": "com.dynatrace.builtin:host.cpu.load",
 			"aggregation": "avg",
+			"entityIds": "HOST-060E32CBBA091CBF",
 			"upperWarning": 50,
 			"upperSevere": 70
 		}
