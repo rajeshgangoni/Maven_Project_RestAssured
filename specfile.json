@@ -1,7 +1,6 @@
 [
     {
       "timeseriesId": "com.dynatrace.builtin:host.cpu.usage",
-      //"timeseriesId": "com.dynatrace.builting:host.cpu.idle",
       "displayName": "CPU usage",
       "entityIds": "HOST-060E32CBBA091CBF",
       "dimensions": [
