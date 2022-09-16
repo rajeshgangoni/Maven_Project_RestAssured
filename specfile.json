@@ -1,26 +1,19 @@
 {
-    "spec_version": "2.0",
-	"timeseries": [
-    {
-      "timeseriesId": "com.dynatrace.builtin:host.cpu.usage",
-      "displayName": "CPU usage",
-      "entityIds": "HOST-060E32CBBA091CBF",
-      "dimensions": [
-        "HOST"
-      ],
-      "aggregationTypes": [
-        "AVG",
-        "SUM",
-        "MIN",
-        "MAX"
-      ],
-      "unit": "Percent",
-      "filter": "BUILTIN",
-      "detailedSource": "Infrastructure",
-      "types": [
-        "Test"
-      ],
-      "warnings": []
-    }
-   ]
+	"spec_version": "2.0",
+	"timeseries": [{
+                       "timeseriesId": "com.dynatrace.builtin:host.cpu.usage",
+                       "aggregation": "avg",
+                       "entityIds": "HOST-060E32CBBA091CBF",
+                       "upperWarning": 5000,
+                       "upperSevere": 8000
+		},
+		{
+			"timeseriesId": "com.dynatrace.builtin:host.mem.usage",
+			"aggregation": "avg",
+			"entityIds": "HOST-060E32CBBA091CBF",
+			"upperWarning": 5000,
+			"upperSevere": 8000
+		}
+		
+	]
 }
