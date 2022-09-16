@@ -1,32 +1,24 @@
-{
-	"spec_version": "2.0",
-	"timeseries": [{
-			"timeseriesId": "com.dynatrace.builtin:host.cpu.idle",
-			"aggregation": "avg",
-		        "entityIds": "HOST-060E32CBBA091CBF",
-			"upperWarning": 5000,
-			"upperSevere": 10000
-		},
-		{
-			"timeseriesId": "com.dynatrace.builtin:host.cpu.usage",
-			"aggregation": "avg",
-			"entityIds": "HOST-060E32CBBA091CBF",
-			"upperWarning": 5000,
-			"upperSevere": 8000
-		},
-		{
-			"timeseriesId": "com.dynatrace.builtin:host.cpu.gcpu.usage",
-			"aggregation": "avg",
-			"entityIds": "HOST-060E32CBBA091CBF",
-			"upperWarning": 5000,
-			"upperSevere": 8000
-		},
-		{
-			"timeseriesId": "com.dynatrace.builtin:host.cpu.load",
-			"aggregation": "avg",
-			"entityIds": "HOST-060E32CBBA091CBF",
-			"upperWarning": 50,
-			"upperSevere": 70
-		}
-	]
-}
+[
+    {
+      "timeseriesId": "com.dynatrace.builtin:host.cpu.usage",
+      //"timeseriesId": "com.dynatrace.builting:host.cpu.idle",
+      "displayName": "CPU usage",
+      "entityIds": "HOST-060E32CBBA091CBF",
+      "dimensions": [
+        "HOST"
+      ],
+      "aggregationTypes": [
+        "AVG",
+        "SUM",
+        "MIN",
+        "MAX"
+      ],
+      "unit": "Percent",
+      "filter": "BUILTIN",
+      "detailedSource": "Infrastructure",
+      "types": [
+        "Test"
+      ],
+      "warnings": []
+    }
+  ]
