@@ -8,6 +8,13 @@
 			"upperSevere": 10000
 		},
 		{
+			"timeseriesId": "com.dynatrace.builtin:host.cpu.usage",
+			"aggregation": "avg",
+			"entityIds": "HOST-060E32CBBA091CBF",
+			"upperWarning": 5000,
+			"upperSevere": 8000
+		},
+		{
 			"timeseriesId": "com.dynatrace.builtin:host.cpu.gcpu.usage",
 			"aggregation": "avg",
 			"entityIds": "HOST-060E32CBBA091CBF",
